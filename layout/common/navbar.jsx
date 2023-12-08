@@ -41,14 +41,15 @@ class Navbar extends Component {
 
         return <nav class="navbar navbar-main">
             <div class="container navbar-container">
-                <div class="navbar-brand justify-content-center">
+                <div class="navbar-brand justify-content-start">
                     <a class="navbar-item navbar-logo" href={siteUrl}>
                         {navbarLogo}
+                        <span className="navbar-item site-title">程序猿Bug超</span>
                     </a>
                 </div>
 
                 <div class="navbar-menu">
-                    {Object.keys(menu).length ? <div class="navbar-start">
+                {Object.keys(menu).length ? <div class="navbar-start">
                         {Object.keys(menu).map(name => {
                             const item = menu[name];
                             return <a class={classname({ 'navbar-item': true, 'is-active': item.active })} href={item.url}>{name}</a>;
