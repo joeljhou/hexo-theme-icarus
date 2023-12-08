@@ -46,6 +46,7 @@ class Navbar extends Component {
                         {navbarLogo}
                     </a>
                 </div>
+
                 <div class="navbar-menu">
                     {Object.keys(menu).length ? <div class="navbar-start">
                         {Object.keys(menu).map(name => {
